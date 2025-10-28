@@ -39,3 +39,37 @@ NULL
 #' mean(lalonde$re78[lalonde$treat == FALSE]) # Average earnings for control
 #' }
 "lalonde"
+
+#' Resume Audit Study Dataset
+#'
+#' A dataset from Bertrand and Mullainathan (2004) studying racial discrimination
+#' in the labor market. The researchers conducted a randomized experiment by
+#' sending fictitious resumes with either Black-sounding or White-sounding names
+#' to help-wanted ads in Boston and Chicago newspapers to measure the effect
+#' of perceived race on callback rates for interviews.
+#'
+#' @format A data frame with 4,870 observations and 4 variables:
+#' \describe{
+#'   \item{firstname}{Character. First name used on the resume}
+#'   \item{sex}{Factor. Sex of the applicant ("male" or "female")}
+#'   \item{race}{Factor. Perceived race based on the name ("black" or "white")}
+#'   \item{call}{Logical. Callback indicator (TRUE = received callback, FALSE = no callback)}
+#' }
+#'
+#' @source
+#' Bertrand, M., & Mullainathan, S. (2004). Are Emily and Greg More Employable
+#' Than Lakisha and Jamal? A Field Experiment on Labor Market Discrimination.
+#' \emph{American Economic Review}, 94(4), 991-1013.
+#'
+#' Data obtained from Harvard Dataverse:
+#' \url{https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ZX3VEV}
+#'
+#' @examples
+#' \dontrun{
+#' data(resumecallback)
+#' summary(resumecallback)
+#' table(resumecallback$race)
+#' mean(resumecallback$call[resumecallback$race == "white"])  # Callback rate for white-sounding names
+#' mean(resumecallback$call[resumecallback$race == "black"])  # Callback rate for black-sounding names
+#' }
+"resumecallback"

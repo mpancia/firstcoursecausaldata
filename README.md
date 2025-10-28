@@ -17,6 +17,7 @@ devtools::install_github("mpancia/introcausaldata")
 ## Datasets
 
 -   **lalonde**: National Supported Work program data from Lalonde (1986) for evaluating treatment effects
+-   **resumecallback**: Resume audit study data from Bertrand and Mullainathan (2004) on racial discrimination in hiring
 
 ## License
 
