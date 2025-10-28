@@ -1,0 +1,41 @@
+#' @importFrom tibble tibble
+NULL
+
+#' Lalonde (1986) National Supported Work Dataset
+#'
+#' A dataset from Robert Lalonde's 1986 study "Evaluating the Econometric
+#' Evaluations of Training Programs with Experimental Data". The dataset
+#' contains information from the National Supported Work (NSW) program,
+#' a temporary employment program designed to help disadvantaged workers
+#' improve their labor market prospects.
+#'
+#' @format A data frame with 16,177 observations and 10 variables:
+#' \describe{
+#'   \item{treat}{Logical. Treatment indicator (TRUE = received NSW training, FALSE = control group)}
+#'   \item{age}{Integer. Age in years}
+#'   \item{educ}{Integer. Years of education completed}
+#'   \item{black}{Logical. TRUE if respondent is Black}
+#'   \item{hispan}{Logical. TRUE if respondent is Hispanic}
+#'   \item{married}{Logical. TRUE if respondent is married}
+#'   \item{nodegree}{Logical. TRUE if respondent has no high school diploma}
+#'   \item{re74}{Double. Real earnings in 1974 (pre-treatment)}
+#'   \item{re75}{Double. Real earnings in 1975 (pre-treatment)}
+#'   \item{re78}{Double. Real earnings in 1978 (post-treatment outcome)}
+#' }
+#'
+#' @source
+#' LaLonde, Robert J. "Evaluating the econometric evaluations of training programs
+#' with experimental data." The American economic review (1986): 604-620.
+#'
+#' Data obtained from Harvard Dataverse:
+#' \url{https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ZX3VEV}
+#'
+#' @examples
+#' \dontrun{
+#' data(lalonde)
+#' summary(lalonde)
+#' table(lalonde$treat)
+#' mean(lalonde$re78[lalonde$treat == TRUE]) # Average earnings for treated
+#' mean(lalonde$re78[lalonde$treat == FALSE]) # Average earnings for control
+#' }
+"lalonde"
