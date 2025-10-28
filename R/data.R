@@ -116,3 +116,43 @@ NULL
 #' summary(finasteride)
 #' }
 "finasteride"
+
+#' STAR Experiment Dataset
+#'
+#' A dataset from Imbens and Rubin (2015) containing data from the Student/Teacher
+#' Achievement Ratio (STAR) experiment conducted in 1985-1986 in Tennessee. This was
+#' a large-scale randomized experiment to evaluate the effect of class size on
+#' student achievement. The data is in long format with schools serving as strata.
+#'
+#' @format A data frame with 68 observations (classrooms) and 4 variables:
+#' \describe{
+#'   \item{school}{Integer. School ID (1-16), serving as strata in the stratified randomized experiment}
+#'   \item{classroom}{Integer. Classroom identifier within each school}
+#'   \item{treatment}{Integer. Treatment indicator (1 = small class (13-17 students), 0 = regular class (22-25 students))}
+#'   \item{outcome}{Double. Standardized average mathematics score}
+#' }
+#'
+#' @details
+#' The STAR experiment was a 4-year study comparing student performance in small
+#' classes (13-17 students) versus regular classes (22-25 students). Students were
+#' randomly assigned within schools, making this a stratified randomized experiment
+#' where schools serve as strata. The outcome represents standardized mathematics
+#' scores, allowing for comparison across different assessment scales.
+#'
+#' This dataset represents a subset of the original STAR data, focusing on the
+#' first year of the experiment with mathematics scores as the primary outcome
+#' of interest.
+#'
+#' @source
+#' Imbens, Guido W., and Donald B. Rubin. \emph{Causal inference in statistics,
+#' social, and biomedical sciences}. Cambridge University Press, 2015.
+#'
+#' @examples
+#' \dontrun{
+#' data(imbens2015star)
+#' summary(imbens2015star)
+#' table(imbens2015star$school)
+#' mean(imbens2015star$outcome[imbens2015star$treatment == 1])  # Small classes
+#' mean(imbens2015star$outcome[imbens2015star$treatment == 0])  # Regular classes
+#' }
+"imbens2015star"

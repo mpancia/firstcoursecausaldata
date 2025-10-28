@@ -25,6 +25,7 @@ devtools::install_github("mpancia/introcausaldata")
 -   **lalonde**: National Supported Work program data from Lalonde (1986) for evaluating treatment effects
 -   **resumecallback**: Resume audit study data from Bertrand and Mullainathan (2004) on racial discrimination in hiring
 -   **finasteride**: Multicenter trial data from Gould (1998) studying finasteride treatment for benign prostatic hyperplasia
+-   **imbens2015star**: Student/Teacher Achievement Ratio (STAR) experiment data from Imbens and Rubin (2015) evaluating class size effects on student achievement
 
 ## License
 
