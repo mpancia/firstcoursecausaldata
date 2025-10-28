@@ -10,14 +10,14 @@ An R data package accompanying Peng Ding's (2024) book *A First Course in Causal
 
 ## Installation
 
-You can install the development version of `introcausaldata` from GitHub:
+You can install the development version of `firstcoursecausaldata` from GitHub:
 
 ``` r
 # Install devtools if you don't have it already
 # install.packages("devtools")
 
 # Install the package from GitHub
-devtools::install_github("mpancia/introcausaldata")
+devtools::install_github("mpancia/firstcoursecausaldata")
 ```
 
 ## Datasets
