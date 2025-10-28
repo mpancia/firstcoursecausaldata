@@ -1,6 +1,6 @@
 Package: firstcoursecausaldata
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Data Sets for "A First Course in Causal Inference"
 Version: 0.1.0
 Authors@R: c(
     person(
@@ -9,8 +9,9 @@ Authors@R: c(
       role = c("aut", "cre")
     )
   )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
+Description: A data package accompanying Peng Ding's (2024) book
+    "A First Course in Causal Inference". Contains data sets used
+    to illustrate key concepts and methods in causal inference research.
 License: CC0
 Encoding: UTF-8
 LazyData: true
