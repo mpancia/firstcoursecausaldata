@@ -61,6 +61,12 @@ test_that("finasteride has no missing values", {
 test_that("finasteride treatment arms have consistent data", {
   # Each center should have data for all three arms
   expect_true(all(finasteride$n0 > 0 & finasteride$n1 > 0 & finasteride$n5 > 0))
-  expect_true(all(!is.na(finasteride$mean0) & !is.na(finasteride$mean1) & !is.na(finasteride$mean5)))
-  expect_true(all(!is.na(finasteride$sd0) & !is.na(finasteride$sd1) & !is.na(finasteride$sd5)))
+  expect_true(all(
+    !is.na(finasteride$mean0) &
+      !is.na(finasteride$mean1) &
+      !is.na(finasteride$mean5)
+  ))
+  expect_true(all(
+    !is.na(finasteride$sd0) & !is.na(finasteride$sd1) & !is.na(finasteride$sd5)
+  ))
 })

@@ -18,7 +18,7 @@ test_that("all datasets have no missing values", {
 })
 
 test_that("all datasets have reasonable row counts", {
-  expect_true(nrow(lalonde) > 1000)  # Large observational study
-  expect_true(nrow(resumecallback) > 1000)  # Resume audit study
-  expect_true(nrow(finasteride) > 10 & nrow(finasteride) < 100)  # Summary data by center
+  expect_true(nrow(lalonde) > 1000) # Large observational study
+  expect_true(nrow(resumecallback) > 1000) # Resume audit study
+  expect_true(nrow(finasteride) > 10 & nrow(finasteride) < 100) # Summary data by center
 })
