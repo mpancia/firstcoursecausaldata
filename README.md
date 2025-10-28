@@ -1,7 +1,9 @@
 # introcausaldata
 
 <!-- badges: start -->
+
 [![R-CMD-check](https://github.com/mpancia/firstcoursecausaldata/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/mpancia/firstcoursecausaldata/actions/workflows/R-CMD-check.yaml)
+
 <!-- badges: end -->
 
 An R data package accompanying Peng Ding's (2024) book *A First Course in Causal Inference*. This package contains data sets used to illustrate key concepts and methods in causal inference research.
