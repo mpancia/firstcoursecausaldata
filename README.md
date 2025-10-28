@@ -6,7 +6,7 @@
 
 <!-- badges: end -->
 
-An R data package accompanying Peng Ding's (2024) book *A First Course in Causal Inference*. This package contains data sets used to illustrate key concepts and methods in causal inference research.
+An R data package accompanying Peng Ding's (2024) book *A First Course in Causal Inference*. This package contains datasets used to illustrate key concepts and methods in causal inference research.
 
 ## Installation
 
@@ -24,6 +24,7 @@ devtools::install_github("mpancia/introcausaldata")
 
 -   **lalonde**: National Supported Work program data from Lalonde (1986) for evaluating treatment effects
 -   **resumecallback**: Resume audit study data from Bertrand and Mullainathan (2004) on racial discrimination in hiring
+-   **finasteride**: Multicenter trial data from Gould (1998) studying finasteride treatment for benign prostatic hyperplasia
 
 ## License
 

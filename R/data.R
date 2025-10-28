@@ -73,3 +73,46 @@ NULL
 #' mean(resumecallback$call[resumecallback$race == "black"])  # Callback rate for black-sounding names
 #' }
 "resumecallback"
+
+#' Finasteride Multicenter Trial Dataset
+#'
+#' A dataset from Gould (1998) containing summary statistics from a stratified
+#' randomized trial studying the efficacy and tolerability of finasteride for
+#' treating benign prostatic hyperplasia (BPH). Within each of the 29 centers,
+#' patients were randomized into three arms: control, finasteride 1mg, and
+#' finasteride 5mg. The centers serve as strata in this stratified randomized
+#' experiment (SRE).
+#'
+#' @format A data frame with 29 observations (centers) and 10 variables:
+#' \describe{
+#'   \item{center}{Integer. Center ID (1-29)}
+#'   \item{n0}{Integer. Sample size in control group}
+#'   \item{mean0}{Double. Mean change in symptom score for control group}
+#'   \item{sd0}{Double. Standard deviation of change for control group}
+#'   \item{n1}{Integer. Sample size in finasteride 1mg group}
+#'   \item{mean1}{Double. Mean change in symptom score for finasteride 1mg group}
+#'   \item{sd1}{Double. Standard deviation of change for finasteride 1mg group}
+#'   \item{n5}{Integer. Sample size in finasteride 5mg group}
+#'   \item{mean5}{Double. Mean change in symptom score for finasteride 5mg group}
+#'   \item{sd5}{Double. Standard deviation of change for finasteride 5mg group}
+#' }
+#'
+#' @details
+#' The outcome is the change from baseline in total symptom score for BPH.
+#' The total symptom score ranges from 0 to 36 (sum of 9 questions, each scored 0-4)
+#' about symptoms of impaired urinary ability. Negative values indicate improvement
+#' in symptoms.
+#'
+#' @source
+#' Gould, A. Lawrence. "Multi‐centre trial analysis revisited."
+#' Statistics in Medicine 17.15‐16 (1998): 1779-1797.
+#'
+#' Data obtained from Harvard Dataverse:
+#' \url{https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ZX3VEV}
+#'
+#' @examples
+#' \dontrun{
+#' data(finasteride)
+#' summary(finasteride)
+#' }
+"finasteride"
