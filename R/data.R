@@ -240,3 +240,68 @@ NULL
 #' mean(electriccompany$treated_post_test) - mean(electriccompany$control_post_test)
 #' }
 "electriccompany"
+
+#' Academic Performance Incentives Experiment Dataset
+#'
+#' A dataset from Angrist et al. (2009) containing data from a randomized experiment
+#' conducted at a Canadian university to evaluate different strategies to improve
+#' academic performance among college freshmen. The data focuses on the control group
+#' and the treatment group offered academic support services and financial incentives
+#' for good grades.
+#'
+#' @format A data frame with 1,656 observations and 48 variables:
+#' \describe{
+#'   \item{GPA_year1, GPA_year2}{Double. 1st and 2nd year GPA}
+#'   \item{age}{Double. Age}
+#'   \item{gpa0}{Double. High school GPA}
+#'   \item{control}{Logical. Control group indicator (TRUE = control, FALSE = treatment)}
+#'   \item{female}{Logical. Female dummy}
+#'   \item{english}{Logical. Mother tongue is English}
+#'   \item{credits_earned1, credits_earned2}{Double. Credits earned in years 1 and 2}
+#'   \item{totcredits_year1}{Double. Total credits attempted}
+#'   \item{finish4}{Logical. Intends to finish in 4 years}
+#'   \item{goodstanding_year1, goodstanding_year2}{Logical. Good standing in years 1 and 2}
+#'   \item{prob_year1, prob_year2}{Logical. On probation in years 1 and 2}
+#'   \item{mom_edn, dad_edn}{Double. Mother and father education}
+#'   \item{mom1, mom2, dad1, dad2}{Logical. Mother/father HS and college graduate indicators}
+#'   \item{mtongue, sex}{Character. Mother tongue and sex}
+#'   \item{hsgroup}{Double. High school group}
+#'   \item{chooseUTM}{Logical. At 1st choice school}
+#'   \item{hcom}{Logical. Lives at home}
+#'   \item{mathsci}{Double. Number of math and science credits attempted}
+#'   \item{work1}{Logical. Plans to work while in school}
+#'   \item{numcourses_nov1}{Double. Courses enrolled as of fall 2005}
+#'   \item{grade_20059_fall}{Double. Fall grade}
+#'   \item{lastmin}{Double. How often leaves studying until last minute}
+#'   \item{lm_never, lm_rarely}{Logical. Never/rarely puts off studying for tests}
+#'   \item{sfp, sfp_p, sfsp, sfsp_p}{Logical. Offered/signed-up for student support programs}
+#'   \item{sfpany, sfpany_p}{Logical. Offered/signed-up for any support program}
+#'   \item{ssp, ssp_p}{Logical. Offered/signed-up for student services program}
+#'   \item{used_ssp, used_fsg, used_adv}{Logical. Received SSP services, attended FSGs, met advisor}
+#'   \item{compsurv, noshow, signup}{Logical. Completed survey, no show, signed up for STAR}
+#'   \item{graddeg}{Logical. Wants more than a BA}
+#' }
+#'
+#' @details
+#' The experiment randomly assigned college freshmen to different treatment conditions
+#' including academic support services (SFP, SSP, SFSP) and financial incentives for good
+#' grades. The primary outcomes are academic performance measures such as GPA in the
+#' first and second years, completion rates, and academic standing.
+#'
+#' @source
+#' Angrist, J., Lavy, V., Schlosser, A. (2009). The effects of high
+#' stakes high school achievement awards: Evidence from a randomized trial.
+#' \emph{American Economic Review}, 99(4), 1384-1414.
+#'
+#' Data obtained from Harvard Dataverse:
+#' \url{https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ZX3VEV}
+#'
+#' @examples
+#' \dontrun{
+#' data(angrist2009)
+#' summary(angrist2009)
+#' table(angrist2009$control)
+#' mean(angrist2009$GPA_year1[!angrist2009$control])  # Treatment group GPA
+#' mean(angrist2009$GPA_year1[angrist2009$control])   # Control group GPA
+#' }
+"angrist2009"

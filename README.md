@@ -28,6 +28,7 @@ devtools::install_github("mpancia/firstcoursecausaldata")
 -   **imbens2015star**: Student/Teacher Achievement Ratio (STAR) experiment data from Imbens and Rubin (2015) evaluating class size effects on student achievement
 -   **koenker2002**: Job training program data from Koenker and Xiao (2002) studying duration before employment with stratified randomization on quarter
 -   **electriccompany**: Electric Company educational experiment data from evaluating the effectiveness of educational television on reading scores
+-   **angrist2009**: Academic performance incentives experiment data from Angrist et al. (2009) evaluating strategies to improve college freshmen academic performance through support services and financial incentives
 
 ## License
 

@@ -17,3 +17,4 @@
 ^LICENSE\.md$
 ^[.]?air[.]toml$
 ^\.vscode$
+^CLAUDE.md
