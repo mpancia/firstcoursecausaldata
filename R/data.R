@@ -232,3 +232,11 @@ NULL
 #' @source
 #' Data obtained from Andrew Gelman's website:
 #' \url{https://stat.columbia.edu/~gelman/arm/examples/ARM_Data.zip}
+#'
+#' @examples
+#' \dontrun{
+#' data(electriccompany)
+#' summary(electriccompany)
+#' mean(electriccompany$treated_post_test) - mean(electriccompany$control_post_test)
+#' }
+"electriccompany"
