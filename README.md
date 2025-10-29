@@ -27,6 +27,7 @@ devtools::install_github("mpancia/firstcoursecausaldata")
 -   **finasteride**: Multicenter trial data from Gould (1998) studying finasteride treatment for benign prostatic hyperplasia
 -   **imbens2015star**: Student/Teacher Achievement Ratio (STAR) experiment data from Imbens and Rubin (2015) evaluating class size effects on student achievement
 -   **koenker2002**: Job training program data from Koenker and Xiao (2002) studying duration before employment with stratified randomization on quarter
+-   **electriccompany**: Electric Company educational experiment data from evaluating the effectiveness of educational television on reading scores
 
 ## License
 

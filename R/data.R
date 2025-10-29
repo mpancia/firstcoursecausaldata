@@ -206,3 +206,29 @@ NULL
 #' table(koenker2002$quarter)  # Distribution across strata
 #' }
 "koenker2002"
+
+#' Electric Company Experiment Dataset
+#'
+#' A dataset from the Children's Television Workshop
+#' experiment evaluating The Electric Company educational television show.
+#'
+#' @format A data frame with 96 observations and 7 variables:
+#' \describe{
+#'   \item{city}{Factor. City identifier}
+#'   \item{grade}{Integer. Grade level (1-4)}
+#'   \item{treated_pre_test}{Double. Pre-test reading scores for treated classrooms}
+#'   \item{treated_post_test}{Double. Post-test reading scores for treated classrooms}
+#'   \item{control_pre_test}{Double. Pre-test reading scores for control classrooms}
+#'   \item{control_post_test}{Double. Post-test reading scores for control classrooms}
+#'   \item{supplement}{Factor. Supplemental material indicator ("S" or "R")}
+#' }
+#'
+#' @details
+#' The experiment contains eight pairs of classes with one class randomly assigned
+#' to watch The Electric Company during reading period, while the other received
+#' standard instruction. Pre-test scores serve as covariates and post-test scores
+#' are the outcomes of interest.
+#'
+#' @source
+#' Data obtained from Andrew Gelman's website:
+#' \url{https://stat.columbia.edu/~gelman/arm/examples/ARM_Data.zip}
